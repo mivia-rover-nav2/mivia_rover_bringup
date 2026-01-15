@@ -13,7 +13,7 @@ def read_config(file_path: str) -> dict:
 
 def import_launch_from_folder(folder_name: str):
     try:
-        launch_file_path = Path.cwd().parent / folder_name / 'launch.py'
+        launch_file_path = Path.cwd().parent / folder_name / 'launch' /'launch.py'
         if launch_file_path.exists():
             launch_description = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource(str(launch_file_path))
@@ -32,7 +32,9 @@ def generate_launch_description():
     
 
     # Directory padre
-    parent_dir = current_dir.parent
+    parent_dir = current_dir.parent.parent 
+    # Assunzione: siamo in package/launch/xxx.py
+    # devo tornare indietro di due cartelle.
 
     # Tutte le cartelle allo stesso livello di A
     sibling_dirs = [

@@ -4,6 +4,6 @@
 verbose: true
 exclude:
   - mivia_rover_description
+  - mivia_rover_sensing
   - mivia_rover_localization
   - mivia_rover_platform
-  - mivia_rover_sensing
