@@ -1,0 +1,9 @@
+# Sotto exlude vengono elencate le cartelle dei package di launch da escludere
+# Questi package non verranno inclusi nel launch principale
+# per aggiungere un file si noti che la sintassi PREVEDE l'uso di trattini (-)
+verbose: true
+exclude:
+  - mivia_rover_description
+  - mivia_rover_localization
+  - mivia_rover_platform
+  - mivia_rover_sensing
