@@ -52,8 +52,9 @@ class ModuleSpec:
 
 
 MODULES: List[ModuleSpec] = [
-    #ModuleSpec(package="mivia_rover_mapping"),
+    ModuleSpec(package="mivia_rover_visualization", default_launch_file="mivia_rover_visualization.launch.py"),
     ModuleSpec(package="mivia_rover_platform", default_launch_file="mivia_rover.launch.py"),
+    ModuleSpec(package="mivia_rover_mapping"),
     #ModuleSpec(package="mivia_rover_localization"),
     #ModuleSpec(package="mivia_rover_sensing"),
     #ModuleSpec(package="mivia_rover_description"),
