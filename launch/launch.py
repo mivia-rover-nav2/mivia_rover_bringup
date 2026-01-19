@@ -55,7 +55,7 @@ MODULES: List[ModuleSpec] = [
     ModuleSpec(package="mivia_rover_visualization", default_launch_file="mivia_rover_visualization.launch.py"),
     ModuleSpec(package="mivia_rover_platform", default_launch_file="mivia_rover.launch.py"),
     ModuleSpec(package="mivia_rover_mapping"),
-    #ModuleSpec(package="mivia_rover_localization_bringup", default_launch_file="mivia_rover_localization.launch.py"),
+    ModuleSpec(package="mivia_rover_localization_bringup", default_launch_file="mivia_rover_localization.launch.py"),
     #ModuleSpec(package="mivia_rover_sensing"),
     #ModuleSpec(package="mivia_rover_description"),
 ]
