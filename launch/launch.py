@@ -58,6 +58,8 @@ MODULES: List[ModuleSpec] = [
     ModuleSpec(package="mivia_rover_localization_bringup", default_launch_file="mivia_rover_localization.launch.py"),
     ModuleSpec(package="mivia_rover_nav2_bringup", default_launch_file="mivia_rover_nav2_bringup.launch.py"),
     #ModuleSpec(package="mivia_rover_sensing"),
+    ModuleSpec(package="zed_wrapper", default_launch_file="zed2_camera.launch.py"), # TODO: change to zed_wrapper with mivia_rover_sensing
+    ModuleSpec(package="mivia_rover_perception", default_launch_file="perception_visualizer_node.launch.py"),
     #ModuleSpec(package="mivia_rover_description"),
 ]
 
